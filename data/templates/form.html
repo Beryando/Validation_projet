@@ -1,0 +1,60 @@
+<div class="container-fluid" id="contact">
+    <div class="row align-items-center">
+        <div class="col-12 offset-md-7 col-md-4 formCont">
+            <form action="" method="POST"
+                enctype="text/plain">
+                <div class="form-group">
+                    <label for="id_member">Email</label>
+                    <input type="text" class="form-control"
+                        name="id_member" aria-describedby="emailHelp"
+                        id="id_membre"
+                        placeholder="Votre identifiant" value="<?php
+                        if(isset($id_member)) { echo $id_member; } ?>">
+
+                </div>
+                <div class="form-group">
+                    <label for="passw">Mot de passe</label>
+                    <input type="password" class="form-control"
+                        name="passw" id="passw"
+                        placeholder="Votre mot de passe">
+                    <small id="emailHelp" class="form-text text-muted">
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label for="passw2">Confirmez votre mot de passe</label>
+                    <input type="password" class="form-control"
+                        name="passw2" id="passw2"
+                        placeholder="Confirmez votre mot de passe">
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email</label>
+                    <input type="email" class="form-control"
+                        name="mail" id="mail"
+                        placeholder="Votre email" value="<?php if(isset($mail))
+                        { echo $mail; } ?>">
+                </div>
+                <div class="form-group">
+                    <label for="mail2">Confirm email</label>
+                    <input type="email" class="form-control"
+                        name="mail2" id="mail2"
+                        placeholder="Confirmez votre email" value="<?php
+                        if(isset($mail2)) { echo $mail2; } ?>">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="name" name="age"
+                        placeholder="Votre age" value="<?php if(isset($age)) { echo $age; } ?>">
+                </div>
+                
+                
+                <button type="submit" name='form_inscription' value="Je m'inscris" class="btn btn-danger">Envoyer</button>
+            </form>
+            <?php //-----------Si tous les champs ne sont pas remplis----------
+                if(isset($error))
+                {
+                    echo '<font color="red">'.$error.'</font>';
+                }
+                ?>
+        </div>
+    </div>
+</div>

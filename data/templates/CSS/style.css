@@ -1,0 +1,124 @@
+body {
+    background-color: #eeae54;
+}
+
+.navbar-brand {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.bg-light {
+    background-color: crimson !important;
+}
+
+
+header .row {
+    min-height: 95vh;
+    background-image: url(../img/blusmoo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
+}
+
+header .darkBlock {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+}
+
+header h1 {
+    padding-left: 35%;
+}
+
+
+
+#presentation .media span {
+    color: greenyellow;
+    font-size: 4rem;
+    width: 4rem;
+    text-align: center;
+}
+
+#presentation .media {
+    padding: 0.5rem 1em;
+    transition: all .3s ease-in-out;
+    cursor:pointer;
+
+}
+
+#presentation .media:hover {
+    background-color: crimson;
+    border: 1px solid greenyellow;
+    border-radius: 6px 6px 6px 6px;
+    
+}
+
+.backSmoo {
+    min-height: calc(100vh - 50px);
+    background-image: url(../img/smoo2st.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.feedBack {
+    background-color: grey;
+    min-height: calc(100vh - 50px);
+
+
+}
+
+.feedBack span {
+    font-size: 5rem;
+    color: greenyellow;
+    
+}
+
+.feedBack h5 {
+    font-size: 2rem;
+}
+
+#contact {
+    min-height: calc(100vh - 50px);
+    background-image: url(../img/strawsmoo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact .row {
+    min-height: calc(100vh - 50px);
+}
+
+.formCont {
+    background-color: rgb(173, 255, 47);
+    padding: 2rem 1rem;
+    border-radius: 6px 6px 6px 6px;
+}
+footer {
+    background-color: #d09943;
+    color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+footer a {
+    color: crimson;
+    font-size: 2.5rem;
+    transition: all .2s ease-in-out;
+
+
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ***********PAGE 2***************************** */
+
+#idhai .row .vignet {
+    background-color: darkviolet;
+    border: 1px solid yellow;
+}
+
